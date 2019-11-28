@@ -1,10 +1,12 @@
 @import "src/@fuse/scss/fuse";
 
 #dashboard-analytics {
-
     .main-widget {
         display: flex;
         flex-direction: column;
+        margin-bottom: -150px;
+        z-index: -1;
+        position: relative;
     }
 
     .content {
@@ -13,7 +15,7 @@
         padding: 32px;
         min-width: 0;
 
-        @include media-breakpoint('lt-lg') {
+        @include media-breakpoint("lt-lg") {
             flex-direction: column;
         }
 
@@ -36,7 +38,7 @@
             min-width: 320px;
             max-width: 320px;
 
-            @include media-breakpoint('lt-lg') {
+            @include media-breakpoint("lt-lg") {
                 flex: 1 0 100%;
                 margin-top: 32px;
                 width: 100%;
@@ -45,8 +47,7 @@
             }
 
             .fuse-card {
-
-                @include media-breakpoint('lt-lg') {
+                @include media-breakpoint("lt-lg") {
                     width: 100%;
                     min-width: 0;
                     max-width: none;
@@ -54,5 +55,4 @@
             }
         }
     }
-
 }

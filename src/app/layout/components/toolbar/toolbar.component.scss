@@ -12,10 +12,21 @@ toolbar {
 
     .mat-toolbar {
         position: relative;
-        background: inherit !important;
+        background: #303f9f !important;
+        background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+        background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2) !important;
+        background: -o-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+        background: linear-gradient(45deg, #303f9f, #7b1fa2) !important;
         color: inherit !important;
     }
-
+    .mat-toolbar .mat-icon-button .secondary-text {
+        // color: #ffffff !important;
+        filter: invert(1) grayscale(1) contrast(10);
+    }
+    .mat-toolbar .fuse-search-bar-content mat-icon {
+        // color: #ffffff !important;
+        filter: invert(0) grayscale(1) contrast(10) !important;
+    }
     .logo {
         display: flex;
         align-items: center;
@@ -33,7 +44,7 @@ toolbar {
         min-width: 64px;
         height: 64px;
 
-        @include media-breakpoint('xs') {
+        @include media-breakpoint("xs") {
             height: 56px;
         }
     }
@@ -47,7 +58,7 @@ toolbar {
         height: 64px;
         width: 1px;
 
-        @include media-breakpoint('xs') {
+        @include media-breakpoint("xs") {
             height: 56px;
         }
     }

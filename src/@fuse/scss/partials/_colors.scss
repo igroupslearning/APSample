@@ -71,6 +71,22 @@ $matPalettes: (
 $matHues: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, A100, A200, A400,
     A700;
 
+.Prime-color {
+    position: relative;
+    background: #303f9f !important;
+    background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    background: -o-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    background: linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    color: inherit !important;
+    height: 200px;
+    align-items: baseline !important;
+}
+.Prime-color span,
+.Prime-color .secondary-text {
+    // color: #ffffff !important;
+    filter: invert(1) grayscale(1) contrast(9);
+}
 // -----------------------------------------------------------------------------------------------------
 // @ Text color levels generator
 // -----------------------------------------------------------------------------------------------------

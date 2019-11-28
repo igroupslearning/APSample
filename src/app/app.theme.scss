@@ -180,10 +180,10 @@ $typography: mat-typography-config(
 // -----------------------------------------------------------------------------------------------------
 // @ Define the default theme
 // -----------------------------------------------------------------------------------------------------
-$success: #000;
+
 // Define the primary, accent and warn palettes
 $default-primary-palette: mat-palette($fuse-navy);
-$default-accent-palette: mat-palette($success);
+$default-accent-palette: mat-palette($mat-light-blue, 600, 400, 700);
 $default-warn-palette: mat-palette($mat-red);
 
 // Create the Material theme object
