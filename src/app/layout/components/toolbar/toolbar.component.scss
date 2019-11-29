@@ -10,7 +10,7 @@ toolbar {
         z-index: 2;
     }
 
-    .mat-toolbar {
+    mat-toolbar {
         position: relative;
         background: #303f9f !important;
         background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
@@ -18,15 +18,41 @@ toolbar {
         background: -o-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
         background: linear-gradient(45deg, #303f9f, #7b1fa2) !important;
         color: inherit !important;
+
+        .shortcuts {
+            a {
+                mat-icon {
+                    //color: #ffffff !important;
+                    filter: invert(1) grayscale(1) contrast(10) !important;
+                }
+            }
+        }
+
+        .user-button {
+            .username,
+            mat-icon {
+                color: white;
+            }
+        }
+        fuse-search-bar {
+            .fuse-search-bar-expander {
+                mat-icon {
+                    color: white !important;
+                }
+            }
+        }
+        .quick-panel-toggle-button {
+            mat-icon {
+                color: white !important;
+            }
+        }
+        .language-button {
+            span {
+                color: white;
+            }
+        }
     }
-    .mat-toolbar .mat-icon-button .secondary-text {
-        // color: #ffffff !important;
-        filter: invert(1) grayscale(1) contrast(10);
-    }
-    .mat-toolbar .fuse-search-bar-content mat-icon {
-        // color: #ffffff !important;
-        filter: invert(0) grayscale(1) contrast(10) !important;
-    }
+
     .logo {
         display: flex;
         align-items: center;
